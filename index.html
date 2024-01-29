@@ -9,7 +9,7 @@
         body {
             padding: 0%;
             margin: 0%;
-            background-color: rgb(29, 29, 29);
+            background-color: rgb(44, 44, 44);
         }
 
         .contenedor {
@@ -19,9 +19,12 @@
             justify-content: space-evenly;
         }
 
-        img {
-            display: block;
-            width: 100%;
+        .contenedor-imagen {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30vh;
+            width: 50%;
         }
 
         section {
@@ -32,7 +35,7 @@
         article {
             display: flex;
             width: 200%;
-            animation: bannermove 20s linear infinite;
+            animation: bannermove 60s linear infinite;
         }
 
         .article2 {
@@ -42,28 +45,8 @@
         }
 
         div {
-            width: 100%;
-        }
-
-        ul {
             display: flex;
-            background: red;
-            list-style-type: none;
-            padding-left: 0;
-            margin: 0;
-        }
-
-        li {
             width: 100%;
-            background: blue;
-        }
-
-        li:nth-child(2) {
-            background: green;
-        }
-
-        li:nth-child(3) {
-            background: yellow;
         }
 
         @keyframes bannermove {
@@ -93,20 +76,20 @@
         <section>
             <article>
                 <div>
-                    <ul>
-                        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
-                        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
-                        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
-                        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
-                    </ul>
+                    <div class="contenedor-imagen">
+                        <img src="http://dummyimage.com/600x400/000000/ffffff.png" />
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" />
+                    </div>
                 </div>
                 <div>
-                    <ul>
-                        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
-                        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
-                        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
-                        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
-                    </ul>
+                    <div class="contenedor-imagen">
+                        <img src="http://dummyimage.com/600x400/000000/ffffff.png" />
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" />
+                    </div>
                 </div>
             </article>
         </section>
@@ -115,20 +98,20 @@
         <section>
             <article class="article2">
                 <div>
-                    <ul>
-                        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
-                        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
-                        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
-                        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
-                    </ul>
+                    <div class="contenedor-imagen">
+                        <img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" />
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="http://dummyimage.com/600x400/000000/ffffff.png" />
+                    </div>
                 </div>
                 <div>
-                    <ul>
-                        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
-                        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
-                        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
-                        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
-                    </ul>
+                    <div class="contenedor-imagen">
+                        <img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" />
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="http://dummyimage.com/600x400/000000/ffffff.png" />
+                    </div>
                 </div>
             </article>
         </section>
