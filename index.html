@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+            background-color: rgb(29, 29, 29);
+        }
+
+        .contenedor {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        section {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        article {
+            display: flex;
+            width: 200%;
+            animation: bannermove 20s linear infinite;
+        }
+
+        .article2 {
+            display: flex;
+            width: 200%;
+            animation: bannermove2 20s linear infinite;
+        }
+
+        div {
+            width: 100%;
+        }
+
+        ul {
+            display: flex;
+            background: red;
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        li {
+            width: 100%;
+            background: blue;
+        }
+
+        li:nth-child(2) {
+            background: green;
+        }
+
+        li:nth-child(3) {
+            background: yellow;
+        }
+
+        @keyframes bannermove {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes bannermove2 {
+            0% {
+                transform: translateX(-50%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <section>
+            <article>
+                <div>
+                    <ul>
+                        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+                        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
+                        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+                        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+                        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
+                        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+                        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+
+        <section>
+            <article class="article2">
+                <div>
+                    <ul>
+                        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+                        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
+                        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+                        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+                        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
+                        <li><img src="http://dummyimage.com/600x400/000000/ffffff.png" /></li>
+                        <li><img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" /></li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </div>
+</body>
+
+</html>
