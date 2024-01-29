@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
             padding: 0%;
@@ -12,36 +13,23 @@
             background-color: rgb(44, 44, 44);
         }
 
-        .contenedor {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+        img {
+            height: 100%;
+            width: auto;
         }
 
-        .contenedor-imagen {
+        .article1 {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 400%;
             height: 30vh;
-            width: 50%;
-        }
-
-        section {
-            width: 100%;
-            overflow: hidden;
-        }
-
-        article {
-            display: flex;
-            width: 200%;
             animation: bannermove 60s linear infinite;
         }
 
         .article2 {
             display: flex;
-            width: 200%;
-            animation: bannermove2 20s linear infinite;
+            width: 400%;
+            height: 30vh;
+            animation: bannermove2 60s linear infinite;
         }
 
         div {
@@ -68,48 +56,93 @@
                 transform: translateX(0);
             }
         }
+
+        @media (min-width: 768px) {
+            .article1 {
+                animation: bannermove 100s linear infinite;
+            }
+
+            .article2 {
+                animation: bannermove2 100s linear infinite;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .article1 {
+                width: 200%;
+                animation: bannermove 140s linear infinite;
+            }
+
+            .article2 {
+                width: 200%;
+                animation: bannermove2 140s linear infinite;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="contenedor">
-        <section>
-            <article>
+    <div class="h-screen flex flex-col justify-evenly">
+        <section class="w-full overflow-hidden">
+            <article class="article1">
                 <div>
-                    <div class="contenedor-imagen">
+                    <div class="flex items-center justify-center h-full w-1/4">
+                        <img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" />
+                    </div>
+                    <div class="flex items-center justify-center h-full w-1/4">
                         <img src="http://dummyimage.com/600x400/000000/ffffff.png" />
                     </div>
-                    <div class="contenedor-imagen">
+                    <div class="flex items-center justify-center h-full w-1/4">
                         <img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" />
+                    </div>
+                    <div class="flex items-center justify-center h-full w-1/4">
+                        <img src="http://dummyimage.com/600x400/000000/ffffff.png" />
                     </div>
                 </div>
                 <div>
-                    <div class="contenedor-imagen">
+                    <div class="flex items-center justify-center h-full w-1/4">
+                        <img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" />
+                    </div>
+                    <div class="flex items-center justify-center h-full w-1/4">
                         <img src="http://dummyimage.com/600x400/000000/ffffff.png" />
                     </div>
-                    <div class="contenedor-imagen">
+                    <div class="flex items-center justify-center h-full w-1/4">
                         <img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" />
+                    </div>
+                    <div class="flex items-center justify-center h-full w-1/4">
+                        <img src="http://dummyimage.com/600x400/000000/ffffff.png" />
                     </div>
                 </div>
             </article>
         </section>
 
-
-        <section>
+        <section class="w-full overflow-hidden">
             <article class="article2">
                 <div>
-                    <div class="contenedor-imagen">
+                    <div class="flex items-center justify-center h-full w-1/4">
                         <img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" />
                     </div>
-                    <div class="contenedor-imagen">
+                    <div class="flex items-center justify-center h-full w-1/4">
+                        <img src="http://dummyimage.com/600x400/000000/ffffff.png" />
+                    </div>
+                    <div class="flex items-center justify-center h-full w-1/4">
+                        <img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" />
+                    </div>
+                    <div class="flex items-center justify-center h-full w-1/4">
                         <img src="http://dummyimage.com/600x400/000000/ffffff.png" />
                     </div>
                 </div>
                 <div>
-                    <div class="contenedor-imagen">
+                    <div class="flex items-center justify-center h-full w-1/4">
                         <img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" />
                     </div>
-                    <div class="contenedor-imagen">
+                    <div class="flex items-center justify-center h-full w-1/4">
+                        <img src="http://dummyimage.com/600x400/000000/ffffff.png" />
+                    </div>
+                    <div class="flex items-center justify-center h-full w-1/4">
+                        <img src="http://dummyimage.com/600x400/eeeeee/cccccc.png" />
+                    </div>
+                    <div class="flex items-center justify-center h-full w-1/4">
                         <img src="http://dummyimage.com/600x400/000000/ffffff.png" />
                     </div>
                 </div>
